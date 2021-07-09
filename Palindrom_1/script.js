@@ -2,7 +2,7 @@
 
 let str = prompt ("Введите здесь любую фразу", "Иди, Сеня, не сиди!");
 
-str=str.toUpperCase().replace(/\W/g, '');
+str=str.toUpperCase().replace(/[\s , ! - \?]/g, '');
 
 
 if (str===str.split('').reverse().join('')){
